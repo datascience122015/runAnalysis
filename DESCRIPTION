@@ -1,0 +1,8 @@
+Package: runAnalysis
+Title: What the Package Does (RUN ANALYSIS)
+Version: 0.0.0.9000
+Authors@R: person("Suparna", "Sen", email = "suparna1992@gmail.com", role = c("aut", "cre"))
+Description: Assignment: Getting and Cleaning Data Course Project
+Depends: R (>= 3.2.2)
+License: What license is it under?
+LazyData: true
