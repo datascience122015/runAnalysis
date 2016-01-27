@@ -24,14 +24,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 OUTPUT FILE:  analysedData.txt
 Requirement for the final analysed data:
 ========================================
-Average/mean in standard units of each variable for each activity and each subject for mean and standard deviation readings ignoring the following subgroupings for the activity and the subject:
-
-1. time and frequency domain variables
-2. gravitational and body motion components
-3. sensor signals (accelerometer and gyroscope)
-4. 3-axial signals in the X, Y and Z directions
-5. jerk signals 
-6. the magnitude of three-dimensional signals
+Average/mean in standard units of each variable for each activity and each subject.
 
 ```
 #### STEP 1 Reading and Merging 
