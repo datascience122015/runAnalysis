@@ -44,14 +44,7 @@ The dimensions of the given relevant datasets:
 
 Requirement for the final analysed data:
 ========================================
-Average/mean in standard units of each variable for each activity and each subject for mean and standard deviation readings ignoring the differences in the the following subgroupings for the activity and the subject:
-
-1. time and frequency domain variables
-2. gravitational and body motion components
-3. sensor signals (accelerometer and gyroscope)
-4. 3-axial signals in the X, Y and Z directions
-5. jerk signals
-6. the magnitude of three-dimensional signals
+Average/mean in standard units of each variable for each activity and each subject.
 
 Steps taken to derive the final output 'analysedData.txt'
 =========================================================
