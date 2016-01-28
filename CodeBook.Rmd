@@ -27,6 +27,14 @@ Requirement for the final analysed data:
 Average/mean in standard units of each variable for each activity and each subject.
 
 ```
+```
+STEPS for EXECUTION
+====================
+Copy R-scripts in a folder.
+Set the working-directory to the folder.
+Run the R-Script - run_analysis.R
+```
+#### INSIDE run_analysis.R
 #### STEP 1 Reading and Merging 
 
 ```
