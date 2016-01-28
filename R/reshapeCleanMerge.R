@@ -5,11 +5,11 @@
     colnames(trainActID)=c("ACTID","ACTDESC")
 
 #CREATING SUBJECT-ACTIVITY WITH ACTIVITY DESCRIPTION INSTEAD OF CODE
-    TEST.subj.act<-cbind.data.frame(subject_test.df,testActID[,2],stringsAsFactors = FALSE)
-    colnames(TEST.subj.act)<-c("SUBJID","ACTDESC")
+    TEST.act.subj<-cbind.data.frame(testActID[,2],subject_test.df,stringsAsFactors = FALSE)
+    colnames(TEST.act.subj)<-c("ACTDESC","SUBJID")
 
-    TRAIN.subj.act<-cbind(subject_train.df,trainActID[,2],stringsAsFactors = FALSE)
-    colnames(TRAIN.subj.act)<-c("SUBJID","ACTDESC")
+    TRAIN.act.subj<-cbind(trainActID[,2],subject_train.df,stringsAsFactors = FALSE)
+    colnames(TRAIN.act.subj)<-c("ACTDESC","SUBJID")
     
 ## cleaning up data FEATURE TABLE- substituting "BodyBody" by just "Body"
     c<-grep("BodyBody", feature.df[,2])
@@ -19,8 +19,8 @@
     colnames(testData.df) = col_list
     colnames(trainData.df)=col_list
 #ADDING SUBJECT & ACTIVITY DESCRIPTION
-    TEST_DATA<-cbind(TEST.subj.act,testData.df,stringsAsFactors = FALSE)
-    TRAIN_DATA<-cbind(TRAIN.subj.act,trainData.df,stringsAsFactors = FALSE)
+    TEST_DATA<-cbind(TEST.act.subj,testData.df,stringsAsFactors = FALSE)
+    TRAIN_DATA<-cbind(TRAIN.act.subj,trainData.df,stringsAsFactors = FALSE)
 #MERGING DATA
     MERGED_DATA<-rbind(TEST_DATA,TRAIN_DATA)
     str(MERGED_DATA)
